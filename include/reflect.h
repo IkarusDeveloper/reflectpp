@@ -27,99 +27,166 @@
 									 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, \
 									 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1))
 
+#define _REFL_MEMBER_0()
+#define _REFL_MEMBER_1(...)
 #define _REFL_MEMBER_2(type, name) type name{};
-#define _REFL_MEMBER_4(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_6(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_8(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_10(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_12(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_14(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_16(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_18(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_20(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_22(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_24(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_26(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_28(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_30(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_32(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_34(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_36(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_38(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_40(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
-#define _REFL_MEMBER_42(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(##__VA_ARGS__))
+#define _REFL_MEMBER_4(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_6(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_8(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_10(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_12(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_14(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_16(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_18(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_20(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_22(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_24(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_26(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_28(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_30(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_32(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_34(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_36(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_38(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_40(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_42(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_44(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_46(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_48(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_50(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_52(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_54(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_56(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_58(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_60(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_62(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_64(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_66(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
+#define _REFL_MEMBER_68(type, name, ...) type name{}; REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))
 
+#define _REFL_TUPLE_TYPE_MEMBER_0()
+#define _REFL_TUPLE_TYPE_MEMBER_1(...)
 #define _REFL_TUPLE_TYPE_MEMBER_2(desc, type, name) desc type&
-#define _REFL_TUPLE_TYPE_MEMBER_4(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_6(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_8(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_10(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_12(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_14(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_16(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_18(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_20(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_22(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_24(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_26(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_28(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_30(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_32(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_34(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_38(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_40(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_TYPE_MEMBER_42(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_4(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_6(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_8(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_10(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_12(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_14(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_16(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_18(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_20(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_22(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_24(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_26(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_28(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_30(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_32(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_34(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_36(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_38(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_40(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_42(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_44(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_46(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_48(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_50(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_52(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_54(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_56(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_58(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_60(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_62(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_64(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_66(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_TYPE_MEMBER_68(desc, type, name, ...) desc type&, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
 
+#define _REFL_TUPLE_VALUE_MEMBER_0()
+#define _REFL_TUPLE_VALUE_MEMBER_1(...)
 #define _REFL_TUPLE_VALUE_MEMBER_2(desc, type, name) desc name
-#define _REFL_TUPLE_VALUE_MEMBER_4(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_6(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_8(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_10(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_12(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_14(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_16(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_18(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_20(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_22(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_24(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_26(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_28(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_30(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_32(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_34(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_38(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_40(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
-#define _REFL_TUPLE_VALUE_MEMBER_42(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, ##__VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_4(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_6(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_8(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_10(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_12(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_14(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_16(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_18(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_20(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_22(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_24(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_26(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_28(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_30(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_32(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_34(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_36(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_38(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_40(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_42(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_44(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_46(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_48(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_50(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_52(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_54(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_56(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_58(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_60(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_62(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_64(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_66(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
+#define _REFL_TUPLE_VALUE_MEMBER_68(desc, type, name, ...) desc name, REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(desc, __VA_ARGS__))
 
+#define _REFL_CALL_VALUE_MEMBER_0()
+#define _REFL_CALL_VALUE_MEMBER_1(...)
 #define _REFL_CALL_VALUE_MEMBER_2( function, type, name) function(#name, name);
-#define _REFL_CALL_VALUE_MEMBER_4( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_6( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_8( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_10( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_12( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_14( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_16( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_18( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_20( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_22( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_24( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_26( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_28( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_30( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_32( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_34( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_38( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_40( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
-#define _REFL_CALL_VALUE_MEMBER_42( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, ##__VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_4( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_6( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_8( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_10( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_12( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_14( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_16( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_18( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_20( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_22( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_24( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_26( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_28( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_30( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_32( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_34( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_36( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_38( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_40( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_42( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_44( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_46( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_48( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_50( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_52( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_54( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_56( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_58( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_60( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_62( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_64( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_66( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
+#define _REFL_CALL_VALUE_MEMBER_68( function, type, name, ...) function(#name, name); REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))( function, __VA_ARGS__))
 
 #define _REFL_NAME_GETTER(_name) \
-	static constexpr std::string type_name(){ return #_name; }\
-	constexpr std::string name() const { return #_name; }
+	static constexpr std::string_view refl_type_name(){ return #_name; }\
+	constexpr std::string_view refl_name() const { return #_name; }
+
+#define _REFL_MEMBER_COUNT_GETTER(...)\
+	constexpr size_t refl_member_count() const { return REFL_NARGS(__VA_ARGS__) / 2; }\
+	static constexpr size_t refl_type_member_count() { return REFL_NARGS(__VA_ARGS__) / 2; }
 
 #define _REFL_FALSE_INHERITANCE()\
-	static constexpr bool is_inherited(){ return false; }
+	static constexpr bool refl_is_inherited(){ return false; }
 #define _REFL_TRUE_INHERITANCE(name, base)\
-	static constexpr bool is_inherited(){ return true; }\
+	static constexpr bool refl_is_inherited(){ return true; }\
 	using base_type = base;\
 	name::base_type& base_object(){ return static_cast<name::base_type&>(*this); }\
 	const name::base_type& base_object() const { return static_cast<const name::base_type&>(*this); }
@@ -127,12 +194,14 @@
 // NO EXPANSIONS
 #define REFL_CLASS(name, ...) \
 	struct name : public refl::reflect_class {  \
+		_REFL_MEMBER_COUNT_GETTER(__VA_ARGS__)\
 		_REFL_FALSE_INHERITANCE()\
 		_REFL_NAME_GETTER(name)\
 		REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_NARGS(__VA_ARGS__))(__VA_ARGS__))\
 	}
 #define REFL_CLASS_DERIVED(name, base, ...)\
 	struct name : public base {  \
+		_REFL_MEMBER_COUNT_GETTER(__VA_ARGS__)\
 		_REFL_TRUE_INHERITANCE(name, base)\
 		_REFL_NAME_GETTER(name)\
 		REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_NARGS(__VA_ARGS__))(__VA_ARGS__))\
@@ -140,172 +209,195 @@
 
 
 // SINGLE EXPANSION
-#define REFL_CLASS_EXPAND1(expander, name, ...) struct name : public refl::reflect_class {  \
-	_REFL_FALSE_INHERITANCE()\
-	_REFL_NAME_GETTER(name)\
-	REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
-	expander(name, __VA_ARGS__)\
-}
-#define REFL_CLASS_DERIVED_EXPAND1(expander, name, base, ...) struct name : public base {  \
-	_REFL_TRUE_INHERITANCE(name, base)\
-	_REFL_NAME_GETTER(name)\
-	REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
-	expander(name, __VA_ARGS__)\
-}
+#define REFL_CLASS_EXPAND1(expander, name, ...) \
+	struct name : public refl::reflect_class {  \
+		_REFL_MEMBER_COUNT_GETTER(__VA_ARGS__)\
+		_REFL_FALSE_INHERITANCE()\
+		_REFL_NAME_GETTER(name)\
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
+		expander(name, __VA_ARGS__)\
+	}
+
+#define REFL_CLASS_DERIVED_EXPAND1(expander, name, base, ...) \
+	struct name : public base {  \
+		_REFL_MEMBER_COUNT_GETTER(__VA_ARGS__)\
+		_REFL_TRUE_INHERITANCE(name, base)\
+		_REFL_NAME_GETTER(name)\
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
+		expander(name, __VA_ARGS__)\
+	}
 
 
 // 2 EXPANSIONS
-#define REFL_CLASS_EXPAND2(expander1, expander2, name, ...) struct name : public refl::reflect_class {  \
-	_REFL_FALSE_INHERITANCE()\
-	_REFL_NAME_GETTER(name)\
-	REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
-	expander1(name, __VA_ARGS__)\
-	expander2(name, __VA_ARGS__)\
-}
-#define REFL_CLASS_DERIVED_EXPAND2(expander1, expander2, name, base, ...) struct name : public base {  \
-	_REFL_TRUE_INHERITANCE(name, base)\
-	_REFL_NAME_GETTER(name)\
-	REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
-	expander1(name, __VA_ARGS__)\
-	expander2(name, __VA_ARGS__)\
-}
+#define REFL_CLASS_EXPAND2(expander1, expander2, name, ...) \
+	struct name : public refl::reflect_class {  \
+		_REFL_MEMBER_COUNT_GETTER(__VA_ARGS__)\
+		_REFL_FALSE_INHERITANCE()\
+		_REFL_NAME_GETTER(name)\
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
+		expander1(name, __VA_ARGS__)\
+		expander2(name, __VA_ARGS__)\
+	}
+#define REFL_CLASS_DERIVED_EXPAND2(expander1, expander2, name, base, ...) \
+	struct name : public base {  \
+		_REFL_MEMBER_COUNT_GETTER(__VA_ARGS__)\
+		_REFL_TRUE_INHERITANCE(name, base)\
+		_REFL_NAME_GETTER(name)\
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
+		expander1(name, __VA_ARGS__)\
+		expander2(name, __VA_ARGS__)\
+	}
 
 
 
 // 3 EXPANSIONS
-#define REFL_CLASS_EXPAND3(expander1, expander2, expander3, name, ...) struct name : public refl::reflect_class {  \
-	_REFL_FALSE_INHERITANCE()\
-	_REFL_NAME_GETTER(name)\
-	REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
-	expander1(name, __VA_ARGS__)\
-	expander2(name, __VA_ARGS__)\
-	expander3(name, __VA_ARGS__)\
-}
-#define REFL_CLASS_DERIVED_EXPAND3(expander1, expander2, expander3, name, base, ...) struct name : public base {  \
-	_REFL_TRUE_INHERITANCE(name, base)\
-	_REFL_NAME_GETTER(name)\
-	REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
-	expander1(name, __VA_ARGS__)\
-	expander2(name, __VA_ARGS__)\
-	expander3(name, __VA_ARGS__)\
-}
+#define REFL_CLASS_EXPAND3(expander1, expander2, expander3, name, ...) \
+	struct name : public refl::reflect_class {  \
+		_REFL_MEMBER_COUNT_GETTER(__VA_ARGS__)\
+		_REFL_FALSE_INHERITANCE()\
+		_REFL_NAME_GETTER(name)\
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
+		expander1(name, __VA_ARGS__)\
+		expander2(name, __VA_ARGS__)\
+		expander3(name, __VA_ARGS__)\
+	}
+
+#define REFL_CLASS_DERIVED_EXPAND3(expander1, expander2, expander3, name, base, ...) \
+	struct name : public base {  \
+		_REFL_MEMBER_COUNT_GETTER(__VA_ARGS__)\
+		_REFL_TRUE_INHERITANCE(name, base)\
+		_REFL_NAME_GETTER(name)\
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
+		expander1(name, __VA_ARGS__)\
+		expander2(name, __VA_ARGS__)\
+		expander3(name, __VA_ARGS__)\
+	}
 
 
 
 // 4 EXPANSIONS
-#define REFL_CLASS_EXPAND4(expander1, expander2, expander3, expander4, name, ...) struct name : public refl::reflect_class {  \
-	_REFL_FALSE_INHERITANCE()\
-	_REFL_NAME_GETTER(name)\
-	REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
-	expander1(name, __VA_ARGS__)\
-	expander2(name, __VA_ARGS__)\
-	expander3(name, __VA_ARGS__)\
-	expander4(name, __VA_ARGS__)\
-}
-#define REFL_CLASS_DERIVED_EXPAND4(expander1, expander2, expander3, expander4, name, base, ...) struct name : public base {  \
-	_REFL_TRUE_INHERITANCE(name, base)\
-	_REFL_NAME_GETTER(name)\
-	REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
-	expander1(name, __VA_ARGS__)\
-	expander2(name, __VA_ARGS__)\
-	expander3(name, __VA_ARGS__)\
-	expander4(name, __VA_ARGS__)\
-}
+#define REFL_CLASS_EXPAND4(expander1, expander2, expander3, expander4, name, ...) \
+	struct name : public refl::reflect_class {  \
+		_REFL_MEMBER_COUNT_GETTER(__VA_ARGS__)\
+		_REFL_FALSE_INHERITANCE()\
+		_REFL_NAME_GETTER(name)\
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
+		expander1(name, __VA_ARGS__)\
+		expander2(name, __VA_ARGS__)\
+		expander3(name, __VA_ARGS__)\
+		expander4(name, __VA_ARGS__)\
+	}
+
+#define REFL_CLASS_DERIVED_EXPAND4(expander1, expander2, expander3, expander4, name, base, ...) \
+	struct name : public base {  \
+		_REFL_MEMBER_COUNT_GETTER(__VA_ARGS__)\
+		_REFL_TRUE_INHERITANCE(name, base)\
+		_REFL_NAME_GETTER(name)\
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
+		expander1(name, __VA_ARGS__)\
+		expander2(name, __VA_ARGS__)\
+		expander3(name, __VA_ARGS__)\
+		expander4(name, __VA_ARGS__)\
+	}
 
 
 
 // 5 EXPANSIONS
-#define REFL_CLASS_EXPAND5(expander1, expander2, expander3, expander4, expander5, name, ...) struct name : public refl::reflect_class {  \
-	_REFL_FALSE_INHERITANCE()\
-	_REFL_NAME_GETTER(name)\
-	REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
-	expander1(name, __VA_ARGS__)\
-	expander2(name, __VA_ARGS__)\
-	expander3(name, __VA_ARGS__)\
-	expander4(name, __VA_ARGS__)\
-	expander5(name, __VA_ARGS__)\
-}
-#define REFL_CLASS_DERIVED_EXPAND5(expander1, expander2, expander3, expander4, expander5, name, base, ...) struct name : public base {  \
-	_REFL_TRUE_INHERITANCE(name, base)\
-	_REFL_NAME_GETTER(name)\
-	REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
-	expander1(name, __VA_ARGS__)\
-	expander2(name, __VA_ARGS__)\
-	expander3(name, __VA_ARGS__)\
-	expander4(name, __VA_ARGS__)\
-	expander5(name, __VA_ARGS__)\
-}
+#define REFL_CLASS_EXPAND5(expander1, expander2, expander3, expander4, expander5, name, ...) \
+	struct name : public refl::reflect_class {  \
+		_REFL_MEMBER_COUNT_GETTER(__VA_ARGS__)\
+		_REFL_FALSE_INHERITANCE()\
+		_REFL_NAME_GETTER(name)\
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
+		expander1(name, __VA_ARGS__)\
+		expander2(name, __VA_ARGS__)\
+		expander3(name, __VA_ARGS__)\
+		expander4(name, __VA_ARGS__)\
+		expander5(name, __VA_ARGS__)\
+	}
+
+#define REFL_CLASS_DERIVED_EXPAND5(expander1, expander2, expander3, expander4, expander5, name, base, ...)\
+	struct name : public base {  \
+		_REFL_MEMBER_COUNT_GETTER(__VA_ARGS__)\
+		_REFL_TRUE_INHERITANCE(name, base)\
+		_REFL_NAME_GETTER(name)\
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
+		expander1(name, __VA_ARGS__)\
+		expander2(name, __VA_ARGS__)\
+		expander3(name, __VA_ARGS__)\
+		expander4(name, __VA_ARGS__)\
+		expander5(name, __VA_ARGS__)\
+	}
 
 // 6 EXPANSIONS
-#define REFL_CLASS_EXPAND6(expander1, expander2, expander3, expander4, expander5, expander6, name, ...) struct name : public refl::reflect_class {  \
-	_REFL_FALSE_INHERITANCE()\
-	_REFL_NAME_GETTER(name)\
-	REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
-	expander1(name, __VA_ARGS__)\
-	expander2(name, __VA_ARGS__)\
-	expander3(name, __VA_ARGS__)\
-	expander4(name, __VA_ARGS__)\
-	expander5(name, __VA_ARGS__)\
-}
-#define REFL_CLASS_DERIVED_EXPAND6(expander1, expander2, expander3, expander4, expander5, expander6, name, base, ...) struct name : public base {  \
-	_REFL_TRUE_INHERITANCE(name, base)\
-	_REFL_NAME_GETTER(name)\
-	REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
-	expander1(name, __VA_ARGS__)\
-	expander2(name, __VA_ARGS__)\
-	expander3(name, __VA_ARGS__)\
-	expander4(name, __VA_ARGS__)\
-	expander5(name, __VA_ARGS__)\
-	expander6(name, __VA_ARGS__)\
-}
+#define REFL_CLASS_EXPAND6(expander1, expander2, expander3, expander4, expander5, expander6, name, ...)	\
+	struct name : public refl::reflect_class {  \
+		_REFL_MEMBER_COUNT_GETTER(__VA_ARGS__)\
+		_REFL_FALSE_INHERITANCE()\
+		_REFL_NAME_GETTER(name)\
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
+		expander1(name, __VA_ARGS__)\
+		expander2(name, __VA_ARGS__)\
+		expander3(name, __VA_ARGS__)\
+		expander4(name, __VA_ARGS__)\
+		expander5(name, __VA_ARGS__)\
+	}
+
+#define REFL_CLASS_DERIVED_EXPAND6(expander1, expander2, expander3, expander4, expander5, expander6, name, base, ...) \
+	struct name : public base {  \
+		_REFL_MEMBER_COUNT_GETTER(__VA_ARGS__)\
+		_REFL_TRUE_INHERITANCE(name, base)\
+		_REFL_NAME_GETTER(name)\
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(__VA_ARGS__))\
+		expander1(name, __VA_ARGS__)\
+		expander2(name, __VA_ARGS__)\
+		expander3(name, __VA_ARGS__)\
+		expander4(name, __VA_ARGS__)\
+		expander5(name, __VA_ARGS__)\
+		expander6(name, __VA_ARGS__)\
+	}
 
 
 #define REFL_EXPANDER_TUPLE_GETTER(name, ...)\
-	template<class T = name, std::enable_if_t<!T::is_inherited(), int> = 0>\
+	template<class T = name, std::enable_if_t<!T::refl_is_inherited(), int> = 0>\
 	std::tuple<REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(, __VA_ARGS__))> reflectedValues() { \
 		return {REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(, __VA_ARGS__))};\
 	}\
-	template<class T = name, std::enable_if_t<T::is_inherited(), int> = 0>\
+	template<class T = name, std::enable_if_t<T::refl_is_inherited(), int> = 0>\
 	decltype(auto) reflectedValues() { \
-		std::tuple<REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(, __VA_ARGS__))> values = \
-			{REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(, __VA_ARGS__))};\
-		auto& baseobj = static_cast<T::base_type&>(*this);\
-		return std::tuple_cat(values, baseobj.reflectedValues()); \
+		return std::tuple_cat(std::make_tuple(REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(, __VA_ARGS__))), static_cast<typename T::base_type&>(*this).reflectedValues()); \
 	}\
-	template<class T = name, std::enable_if_t<!T::is_inherited(), int> = 0>\
+	template<class T = name, std::enable_if_t<!T::refl_is_inherited(), int> = 0>\
 	std::tuple<REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(const , __VA_ARGS__))> reflectedValues() const { \
 		return {REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(, __VA_ARGS__))};\
 	}\
-	template<class T = name, std::enable_if_t<T::is_inherited(), int> = 0>\
+	template<class T = name, std::enable_if_t<T::refl_is_inherited(), int> = 0>\
 	decltype(auto) reflectedValues() const { \
-		std::tuple<REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(const , __VA_ARGS__))> values = \
-			{REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(, __VA_ARGS__))};\
-		auto& baseobj = static_cast<const T::base_type&>(*this);\
-		return std::tuple_cat(values, baseobj.reflectedValues()); \
+		return std::tuple_cat(std::make_tuple(REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(, __VA_ARGS__))), static_cast<const typename T::base_type&>(*this).reflectedValues()); \
 	}
 
 #define REFL_EXPANDER_SERIALIZABLE(name, ...) \
-	template<class Serializer, class T = name, std::enable_if_t<T::is_inherited(), int> = 0> \
-	void serialize(Serializer& serializer) const { \
-		REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(serializer.put, __VA_ARGS__)) \
-		auto& baseobj = static_cast<const T::base_type&>(*this);\
-		baseobj.serialize(serializer);\
+	template<class Serializer, class T = name, std::enable_if_t<T::refl_is_inherited(), int> = 0> \
+	void serialize(Serializer& _refl_lc_serializer) const { \
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(_refl_lc_serializer.put, __VA_ARGS__)) \
+		static_cast<const typename T::base_type&>(*this).serialize(_refl_lc_serializer);\
 	}\
-	template<class Serializer, class T = name, std::enable_if_t<!T::is_inherited(), int> = 0> \
-	void serialize(Serializer& serializer) const{ \
-		REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(serializer.put, __VA_ARGS__)) \
+	template<class Serializer, class T = name, std::enable_if_t<!T::refl_is_inherited(), int> = 0> \
+	void serialize(Serializer& _refl_lc_serializer) const{ \
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(_refl_lc_serializer.put, __VA_ARGS__)) \
 	}\
-	template<class Deserialize> void deserialize(Deserialize& deserializer){ \
-		REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(deserializer.get, __VA_ARGS__)) \
+	template<class Deserialize> \
+	void deserialize(Deserialize& _refl_lc_deserializer){ \
+		REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(_refl_lc_deserializer.get, __VA_ARGS__)) \
 	}
 
 #define REFL_EXPANDER_CRCNAME32(name, ...)\
-	static constexpr uint32_t type_crc(){ return refl::crc32(#name); }\
-	constexpr uint32_t crc(){ return type_crc(); }
+	static constexpr uint32_t refl_type_crc(){ return refl::crc32(#name); }\
+	constexpr uint32_t refl_crc(){ return refl_type_crc(); }
 
 #define REFL_EXPANDER_CRCNAME16(name, ...)\
-	static constexpr uint16_t type_crc(){ return refl::crc16(#name); }\
-	constexpr uint16_t crc(){ return type_crc(); }
+	static constexpr uint16_t refl_type_crc(){ return refl::crc16(#name); }\
+	constexpr uint16_t refl_crc(){ return refl_type_crc(); }
 
 
 #define REFL_CLASS_SERIALIZABLE(name, ...) REFL_CLASS_EXPAND1(REFL_EXPANDER_SERIALIZABLE, name, __VA_ARGS__)
@@ -320,7 +412,9 @@
 
 namespace refl
 {
-	struct reflect_class {};
+	struct reflect_class {
+		constexpr bool operator==(const reflect_class&) const { return true; }
+	};
 }
 
 #endif //INCLUDE_REFLECTPP_REFLECT_H
