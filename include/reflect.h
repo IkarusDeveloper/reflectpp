@@ -389,7 +389,8 @@
 	template<class Deserialize> \
 	void deserialize(Deserialize& _refl_lc_deserializer){ \
 		REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(_refl_lc_deserializer.get, __VA_ARGS__)) \
-	}
+	}\
+	static consteval bool refl_is_serializable(){ return true; }
 
 #define REFL_EXPANDER_CRCNAME32(name, ...)\
 	static constexpr uint32_t refl_type_crc(){ return refl::crc32(#name); }\
@@ -415,6 +416,24 @@ namespace refl
 	struct reflect_class {
 		constexpr bool operator==(const reflect_class&) const { return true; }
 	};
+
+	// SERIALIZABLE CHECK
+	namespace details_
+	{
+		template<class T, class = void>
+		class is_serializable : public std::false_type {
+		};
+
+		template<class T>
+		class is_serializable<T, std::enable_if_t<T::refl_is_serializable()>> : public std::true_type {
+		};
+	}
+
+	template<class T>
+	constexpr bool is_serializable = details_::is_serializable<T>::value;
+
+	template<class T>
+	concept serializable_class = is_serializable<T>;
 }
 
 #endif //INCLUDE_REFLECTPP_REFLECT_H
