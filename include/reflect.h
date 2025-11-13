@@ -184,7 +184,8 @@
 	static constexpr size_t refl_type_member_count() { return REFL_NARGS(__VA_ARGS__) / 2; }
 
 #define _REFL_FALSE_INHERITANCE()\
-	static constexpr bool refl_is_inherited(){ return false; }
+	static constexpr bool refl_is_inherited(){ return false; }\
+	using base_type = refl::no_inherit_type;
 #define _REFL_TRUE_INHERITANCE(name, base)\
 	static constexpr bool refl_is_inherited(){ return true; }\
 	using base_type = base;\
@@ -377,18 +378,15 @@
 	}
 
 #define REFL_EXPANDER_SERIALIZABLE(name, ...) \
-	template<class Serializer, class T = name, std::enable_if_t<T::refl_is_inherited(), int> = 0> \
+	template<class Serializer> \
 	void serialize(Serializer& _refl_lc_serializer) const { \
 		REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(_refl_lc_serializer.put, __VA_ARGS__)) \
-		static_cast<const typename T::base_type&>(*this).serialize(_refl_lc_serializer);\
+		if constexpr (name::refl_is_inherited()) { static_cast<const name::base_type&>(*this).serialize(_refl_lc_serializer);}\
 	}\
-	template<class Serializer, class T = name, std::enable_if_t<!T::refl_is_inherited(), int> = 0> \
-	void serialize(Serializer& _refl_lc_serializer) const{ \
-		REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(_refl_lc_serializer.put, __VA_ARGS__)) \
-	}\
-	template<class Deserialize> \
-	void deserialize(Deserialize& _refl_lc_deserializer){ \
+	template<class Deserializer> \
+	void deserialize(Deserializer& _refl_lc_deserializer){ \
 		REFL_EXPAND(REFL_CONCATENATE(_REFL_CALL_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(_refl_lc_deserializer.get, __VA_ARGS__)) \
+		if constexpr (name::refl_is_inherited()) { static_cast<name::base_type&>(*this).deserialize(_refl_lc_deserializer);}\
 	}\
 	static consteval bool refl_is_serializable(){ return true; }
 
@@ -413,7 +411,14 @@
 
 namespace refl
 {
-	struct reflect_class {
+	struct no_inherit_type {
+		template<class T>
+		void serialize(T& serializer) {}
+		template<class T>
+		void deserialize(T& serializer) {}
+	};
+
+	struct reflect_class : public no_inherit_type {
 		constexpr bool operator==(const reflect_class&) const { return true; }
 	};
 
