@@ -365,7 +365,7 @@
 	}\
 	template<class T = name, std::enable_if_t<T::refl_is_inherited(), int> = 0>\
 	decltype(auto) reflected_tuple() { \
-		return std::tuple_cat(std::make_tuple(REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(, __VA_ARGS__))), static_cast<typename T::base_type&>(*this).reflectedValues()); \
+		return std::tuple_cat(std::make_tuple(REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(, __VA_ARGS__))), static_cast<typename T::base_type&>(*this).reflected_tuple()); \
 	}\
 	template<class T = name, std::enable_if_t<!T::refl_is_inherited(), int> = 0>\
 	std::tuple<REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_TYPE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(const , __VA_ARGS__))> reflected_tuple() const { \
@@ -373,7 +373,7 @@
 	}\
 	template<class T = name, std::enable_if_t<T::refl_is_inherited(), int> = 0>\
 	decltype(auto) reflected_tuple() const { \
-		return std::tuple_cat(std::make_tuple(REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(, __VA_ARGS__))), static_cast<const typename T::base_type&>(*this).reflectedValues()); \
+		return std::tuple_cat(std::make_tuple(REFL_EXPAND(REFL_CONCATENATE(_REFL_TUPLE_VALUE_MEMBER_, REFL_EXPAND(REFL_NARGS(__VA_ARGS__)))(, __VA_ARGS__))), static_cast<const typename T::base_type&>(*this).reflected_tuple()); \
 	}
 
 #define REFL_EXPANDER_SERIALIZABLE(name, ...) \
